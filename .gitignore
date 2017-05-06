@@ -1,3 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
 *.iml
+.idea/compiler.xml
+.idea/copyright/*
+.idea/misc.xml
+.idea/vcs.xml
+.idea/workspace.xml
+sophist.iml
+dependency-reduced-pom.xml
+target/
