@@ -1,8 +1,10 @@
 /**
  * Created by Akshayraj
  */
-package com.loudountutor;
+package com.loudountutor.sophist;
 
+import com.loudountutor.sophist.dao.StudentDAOImpl;
+import com.loudountutor.sophist.resources.StudentResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -20,6 +22,8 @@ public class SophistApplication extends Application<SophistConfiguration> {
     @Override
     public void run(SophistConfiguration sophistConfiguration, Environment environment) throws Exception {
         LOGGER.info("Running SophistApplication");
+
+        environment.jersey().register(new StudentResource(new StudentDAOImpl()));
     }
 
     public static void main(String[] args) throws Exception {

@@ -1,7 +1,7 @@
 /**
  * Created by Akshayraj
  */
-package com.loudountutor;
+package com.loudountutor.sophist;
 
 import io.dropwizard.Configuration;
 
