@@ -3,6 +3,8 @@
  */
 package com.loudountutor.sophist.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,18 +17,22 @@ public class Student {
         @Id
         @NotNull
         @GeneratedValue(strategy = GenerationType.IDENTITY)
+        @JsonProperty
         private long id;
 
         @NotNull
         @Size(min = 2, max = 64)
+        @JsonProperty
         private String name;
 
         @NotNull
         @Size(min = 2, max = 16)
+        @JsonProperty
         private String login;
 
         @NotNull
         @Size(min = 2, max = 16)
+        @JsonProperty
         private String password;
 
         public Student() {

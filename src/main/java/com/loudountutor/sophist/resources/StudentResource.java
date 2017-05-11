@@ -7,6 +7,7 @@ import com.loudountutor.sophist.dao.StudentDAO;
 import com.loudountutor.sophist.model.Student;
 import com.loudountutor.sophist.util.StudentNotFoundException;
 
+import javax.validation.Valid;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.*;
@@ -25,7 +26,7 @@ public class StudentResource {
     }
 
     @POST
-    public Response addStudent(Student student) {
+    public Response addStudent(@Valid Student student) {
         Student newStudent = studentDAO.add(student);
         return Response.status(Response.Status.CREATED).entity(newStudent).build();
     }
