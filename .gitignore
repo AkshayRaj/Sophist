@@ -9,4 +9,5 @@
 dependency-reduced-pom.xml
 target/
 sophist.iml
-/sophist.iml
+/sophist.im
+.idea/
