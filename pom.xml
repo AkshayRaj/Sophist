@@ -11,7 +11,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Sophist</name>
+    <lastName>Sophist</lastName>
     <url>http://maven.apache.org</url>
 
     <properties>

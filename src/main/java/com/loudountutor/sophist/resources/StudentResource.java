@@ -1,6 +1,3 @@
-/**
- * Created by Akshayraj
- */
 package com.loudountutor.sophist.resources;
 
 import com.loudountutor.sophist.dao.StudentDAO;
@@ -27,8 +24,8 @@ public class StudentResource {
 
     @POST
     public Response addStudent(@Valid Student student) {
-        Student newStudent = studentDAO.add(student);
-        return Response.status(Response.Status.CREATED).entity(newStudent).build();
+        Long newStudentId = studentDAO.add(student);
+        return Response.status(Response.Status.CREATED).entity(newStudentId).build();
     }
 
     @GET

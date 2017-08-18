@@ -1,79 +1,148 @@
-/**
- * Created by Akshayraj
- */
 package com.loudountutor.sophist.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import org.slf4j.Logger;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
+@JsonDeserialize(builder = Student.Builder.class)
 public class Student {
 
-        @Id
-        @NotNull
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        @JsonProperty
-        private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-        @NotNull
-        @Size(min = 2, max = 64)
-        @JsonProperty
-        private String name;
+    @NotNull
+    @Size(min = 2, max = 64)
+    private String firstName;
 
-        @NotNull
-        @Size(min = 2, max = 16)
-        @JsonProperty
-        private String login;
+    @NotNull
+    @Size(min = 2, max = 64)
+    private String lastName;
 
-        @NotNull
-        @Size(min = 2, max = 16)
-        @JsonProperty
-        private String password;
+    @NotNull
+    private Date dateOfBirth;
 
-        public Student() {
-        }
+    @NotNull
+    @Size(min = 2, max = 255)
+    private String email;
 
-        public Student(long id, String name, String login, String password) {
-            this.id = id;
-            this.name = name;
-            this.login = login;
-            this.password = password;
-        }
+    @Size(min = 10, max = 14)
+    private String phone;
 
-        public long getId() {
-            return id;
-        }
+    @NotNull
+    @Size(min = 8, max = 255)
+    private String password;
 
-        public void setId(long id) {
-            this.id = id;
-        }
+    private Student(Builder builder) {
+        this.id = builder.id;
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.dateOfBirth = builder.dateOfBirth;
+        this.email = builder.email;
+        this.phone = builder.phone;
+        this.password = builder.password;
+    }
 
-        public String getName() {
-            return name;
-        }
+    public long getId() {
+        return id;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    public String getFirstName() {
+        return firstName;
+    }
 
-        public String getLogin() {
-            return login;
-        }
+    public String getLastName() {
+        return lastName;
+    }
 
-        public void setLogin(String login) {
-            this.login = login;
-        }
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
 
-        public String getPassword() {
-            return password;
-        }
+    public String getEmail() {
+        return email;
+    }
 
-        public void setPassword(String password) {
-            this.password = password;
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    @JsonPOJOBuilder(withPrefix = "set")
+        public static class Builder{
+            @Id
+            @GeneratedValue(strategy = GenerationType.IDENTITY)
+            private long id;
+
+            @NotNull
+            @Size(min = 2, max = 64)
+            private String firstName;
+
+            @NotNull
+            @Size(min = 2, max = 64)
+            private String lastName;
+
+            private Date dateOfBirth;
+
+            @NotNull
+            @Size(min = 2, max = 32)
+            private String email;
+
+            @Size(min = 10, max = 14)
+            private String phone;
+
+            @NotNull
+            @Size(min = 8, max = 16)
+            private String password;
+
+            public Builder setId(Long id) {
+                this.id = id;
+                return this;
+            }
+
+            public Builder setFirstName(String firstName) {
+                this.firstName = firstName;
+                return this;
+            }
+
+            public Builder setLastName(String lastName) {
+                this.lastName = lastName;
+                return this;
+            }
+
+            public Builder setDateOfBirth(Date dateOfBirth) {
+                this.dateOfBirth = dateOfBirth;
+                return this;
+            }
+
+            public Builder setEmail(String email) {
+                this.email = email;
+                return this;
+            }
+
+            public Builder setPhone(String phone) {
+                this.phone = phone;
+                return this;
+            }
+
+            public Builder setPassword(String password) {
+                this.password = password;
+                return this;
+            }
+
+            public Student build(){
+                return new Student(this);
+            }
         }
     }

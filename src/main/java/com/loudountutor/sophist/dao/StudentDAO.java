@@ -10,5 +10,5 @@ public interface StudentDAO {
 
     Student getById(long id) throws StudentNotFoundException;
 
-    Student add(Student student);
+    Long add(Student student);
 }
