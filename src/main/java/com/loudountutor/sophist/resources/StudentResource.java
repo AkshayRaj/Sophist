@@ -24,7 +24,8 @@ public class StudentResource {
 
     @POST
     public Response addStudent(@Valid Student student) {
-        Long newStudentId = studentDAO.add(student);
+        Long newStudentId = studentDAO.add(student.getFirstName(), student.getLastName(), student.getDateOfBirth(),
+                student.getEmail(), student.getPhone());
         return Response.status(Response.Status.CREATED).entity(newStudentId).build();
     }
 

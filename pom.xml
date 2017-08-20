@@ -11,14 +11,16 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <lastName>Sophist</lastName>
+    <name>Sophist</name>
     <url>http://maven.apache.org</url>
 
     <properties>
-        <dropwizard.version>1.1.0</dropwizard.version>
+        <dropwizard.version>1.1.2</dropwizard.version>
+        <mysql.version>5.1.39</mysql.version> <!--6.0.6-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!--************************ DEPENDENCIES ***********************-->
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core -->
         <dependency>
@@ -27,9 +29,19 @@
             <version>${dropwizard.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>javax.persistence</artifactId>
-            <version>2.1.0</version>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-jdbi</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-views-freemarker</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
     </dependencies>
 

@@ -1,8 +1,9 @@
 package com.loudountutor.sophist.dao;
 
-import com.loudountutor.sophist.dao.mapper.StudentRecordMapper;
-import com.loudountutor.sophist.model.Student;
+import com.loudountutor.sophist.dao.mapper.TutorRecordMapper;
+import com.loudountutor.sophist.model.Tutor;
 import com.loudountutor.sophist.util.StudentNotFoundException;
+import com.loudountutor.sophist.util.TutorNotFoundException;
 import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.GetGeneratedKeys;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;
@@ -11,15 +12,15 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import java.sql.Date;
 
-@RegisterMapper(StudentRecordMapper.class)
-public interface StudentDAO {
+@RegisterMapper(TutorRecordMapper.class)
+public interface TutorDAO {
 
     @SqlQuery("SELECT id, firstName, lastName, dateOfBirth, email, phone" +
-            " FROM student " +
+            " FROM tutor " +
             " WHERE id = :id")
-    Student getById(@Bind("id") long id) throws StudentNotFoundException;
+    Tutor getById(@Bind("id") long id) throws TutorNotFoundException;
 
-    @SqlUpdate("INSERT INTO student" +
+    @SqlUpdate("INSERT INTO tutor" +
             " (firstName, lastName, dateOfBirth, email, phone)" +
             " VALUES (:firstName, :lastName, :dateOfBirth, :email, :phone)")
     @GetGeneratedKeys
