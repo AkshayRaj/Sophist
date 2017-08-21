@@ -5,18 +5,13 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import org.slf4j.Logger;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.Date;
+import java.sql.Date;
 
 @JsonDeserialize(builder = Student.Builder.class)
 public class Student {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -34,11 +29,9 @@ public class Student {
     @Size(min = 2, max = 255)
     private String email;
 
-    @Size(min = 10, max = 14)
+    @Size(min = 10, max = 20)
     private String phone;
 
-    @NotNull
-    @Size(min = 8, max = 255)
     private String password;
 
     private Student(Builder builder) {
@@ -81,8 +74,6 @@ public class Student {
 
     @JsonPOJOBuilder(withPrefix = "set")
         public static class Builder{
-            @Id
-            @GeneratedValue(strategy = GenerationType.IDENTITY)
             private long id;
 
             @NotNull
@@ -96,14 +87,14 @@ public class Student {
             private Date dateOfBirth;
 
             @NotNull
-            @Size(min = 2, max = 32)
+            @Size(min = 2, max = 64)
             private String email;
 
             @Size(min = 10, max = 14)
             private String phone;
 
             @NotNull
-            @Size(min = 8, max = 16)
+            @Size(min = 8, max = 64)
             private String password;
 
             public Builder setId(Long id) {

@@ -1,6 +1,3 @@
-/**
- * Created by Akshayraj
- */
 package com.loudountutor.sophist.dao.mapper;
 
 import com.loudountutor.sophist.model.Student;
