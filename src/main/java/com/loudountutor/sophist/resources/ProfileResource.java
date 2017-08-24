@@ -1,21 +1,30 @@
 package com.loudountutor.sophist.resources;
 
-import com.loudountutor.sophist.core.Greeting;
-import com.loudountutor.sophist.views.ProfileView;
-import io.dropwizard.views.View;
+import com.google.common.base.Charsets;
+import com.google.common.io.Resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.io.IOException;
+import java.net.URL;
 
-@Path("/profile")
+@Path("/")
 public class ProfileResource {
 
     @GET
     @Produces(MediaType.TEXT_HTML)
-    public View getProfile() {
-        return new ProfileView();
+    public Response getProfile() {
+        String pageContent = "";
+        try {
+            URL clientPage = Resources.getResource("assets/index.html");
+            pageContent = Resources.toString(clientPage, Charsets.UTF_8);
+        } catch (IOException e) {
+            return Response.serverError().build();
+        }
+        return Response.ok(pageContent).build();
     }
 
 }

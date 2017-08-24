@@ -6,9 +6,12 @@ import com.loudountutor.sophist.resources.ProfileResource;
 import com.loudountutor.sophist.resources.StudentResource;
 import com.loudountutor.sophist.resources.TutorResource;
 import io.dropwizard.Application;
+import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+
+import io.dropwizard.views.ViewBundle;
 import org.skife.jdbi.v2.DBI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,9 +19,11 @@ import org.slf4j.LoggerFactory;
 public class SophistApplication extends Application<SophistConfiguration> {
     private static final Logger LOGGER = LoggerFactory.getLogger(SophistApplication.class);
 
+
     @Override
     public void initialize(Bootstrap<SophistConfiguration> bootstrap) {
-
+        bootstrap.addBundle(new AssetsBundle("/assets/"));
+        bootstrap.addBundle(new ViewBundle());
     }
 
     @Override

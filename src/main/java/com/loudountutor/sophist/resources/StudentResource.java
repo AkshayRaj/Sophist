@@ -3,6 +3,8 @@ package com.loudountutor.sophist.resources;
 import com.loudountutor.sophist.dao.StudentDAO;
 import com.loudountutor.sophist.model.Student;
 import com.loudountutor.sophist.util.StudentNotFoundException;
+import com.loudountutor.sophist.views.StudentView;
+import io.dropwizard.views.View;
 
 import javax.validation.Valid;
 import javax.ws.rs.POST;
@@ -12,7 +14,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/student")
-@Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class StudentResource {
 
@@ -31,13 +32,10 @@ public class StudentResource {
 
     @GET
     @Path("/{id}")
-    public Response getStudent(@PathParam("id") long id) {
-        try {
-            Student student = studentDAO.getById(id);
-            return Response.ok(student).build();
-        } catch (StudentNotFoundException e) {
-            return Response.status(Response.Status.NOT_FOUND).build();
-        }
+    @Produces(MediaType.TEXT_HTML)
+    public View getStudent(@PathParam("id") long id) throws StudentNotFoundException {
+        Student student = studentDAO.getById(id);
+        return new StudentView(student);
     }
 
 }
