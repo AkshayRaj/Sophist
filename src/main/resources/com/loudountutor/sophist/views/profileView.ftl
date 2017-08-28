@@ -32,22 +32,22 @@
     <!-- Fonts END -->
 
     <!-- Global styles START -->
-    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Global styles END -->
 
     <!-- Page level plugin styles START -->
-    <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-    <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+    <link href="/assets/plugins/owl.carousel//assets/owl.carousel.css" rel="stylesheet">
     <!-- Page level plugin styles END -->
 
     <!-- Theme styles START -->
-    <link href="assets/pages/css/components.css" rel="stylesheet">
-    <link href="assets/corporate/css/style.css" rel="stylesheet">
-    <link href="assets/pages/css/portfolio.css" rel="stylesheet">
-    <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
-    <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
-    <link href="assets/corporate/css/custom.css" rel="stylesheet">
+    <link href="/assets/pages/css/components.css" rel="stylesheet">
+    <link href="/assets/corporate/css/style.css" rel="stylesheet">
+    <link href="/assets/pages/css/portfolio.css" rel="stylesheet">
+    <link href="/assets/corporate/css/style-responsive.css" rel="stylesheet">
+    <link href="/assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+    <link href="/assets/corporate/css/custom.css" rel="stylesheet">
     <!-- Theme styles END -->
 </head>
 <!-- Head END -->
@@ -75,7 +75,7 @@
 <!-- BEGIN HEADER -->
 <div class="header">
     <div class="container">
-        <a class="site-logo" href="index.html"><img src="assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>
+        <a class="site-logo" href="index.html"><img src="/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -96,7 +96,7 @@
                         <!-- BEGIN Image View-->
                         <div class="media">
                             <div class="media-left">
-                                <img src="assets/pages/img/works/img1.jpg" class="media-object" style="width:400px">
+                                <img src="/assets/pages/img/works/img1.jpg" class="media-object" style="width:400px">
                             </div>
                         </div>
 
@@ -149,21 +149,21 @@
                 <div class="photo-stream">
                   <h2>Photos Stream</h2>
                   <ul class="list-unstyled">
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/people/img5-small.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img1.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/people/img4-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img6.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img3.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/people/img2-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img2.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img5.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/people/img5-small.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img1.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/people/img4-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img6.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img3.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/people/img2-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="assets/pages/img/works/img2.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img5-small.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img1.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img4-large.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img6.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img3.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img2-large.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img2.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img5.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img5-small.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img1.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img4-large.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img6.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img3.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img2-large.jpg"></a></li>
+                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img2.jpg"></a></li>
                   </ul>
                 </div>
                 -------------- Photo Stream to be published after registrations -->
@@ -218,19 +218,19 @@
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
     <!--[if lt IE 9]>
-    <script src="assets/plugins/respond.min.js"></script>
+    <script src="/assets/plugins/respond.min.js"></script>
     <![endif]-->
-    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <script src="/assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-    <script src="assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <script src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="/assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
 
-    <script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script src="/assets/corporate/scripts/layout.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();
