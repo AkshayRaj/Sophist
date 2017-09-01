@@ -54,23 +54,6 @@
 
 <!-- Body BEGIN -->
 <body class="corporate">
-<!-- BEGIN STYLE CUSTOMIZER -->
-<div class="color-panel hidden-sm">
-    <div class="color-mode-icons icon-color"></div>
-    <div class="color-mode-icons icon-color-close"></div>
-    <div class="color-mode">
-        <p>THEME COLOR</p>
-        <ul class="inline">
-            <li class="color-red current color-default" data-style="red"></li>
-            <li class="color-blue" data-style="blue"></li>
-            <li class="color-green" data-style="green"></li>
-            <li class="color-orange" data-style="orange"></li>
-            <li class="color-gray" data-style="gray"></li>
-            <li class="color-turquoise" data-style="turquoise"></li>
-        </ul>
-    </div>
-</div>
-<!-- END BEGIN STYLE CUSTOMIZER -->
 
 <!-- BEGIN HEADER -->
 <div class="header">
@@ -89,7 +72,7 @@
         <div class="row margin-bottom-40">
             <!-- BEGIN CONTENT -->
             <div class="col-md-12 col-sm-12">
-                <h1>${student.firstName}</h1>
+                <h1>${student.firstName} ${student.lastName}</h1>
                 <div class="content-page">
                     <div class="row margin-bottom-30">
 
@@ -102,10 +85,6 @@
 
                         <!-- BEGIN PORTFOLIO DESCRIPTION -->
                         <div class="col-md-7">
-                            <h2>Quis tempor incididunt</h2>
-                            <p>Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa quis tempor incididunt ut et dolore et dolorum fuga. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus.</p>
-                            <p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.</p>
-                            <br>
                             <div class="row front-lists-v2 margin-bottom-15">
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
@@ -124,7 +103,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a class="btn btn-primary" href="javascript:;"> VISIT THE PROJECT</a>
                         </div>
                         <!-- END PORTFOLIO DESCRIPTION -->
                     </div>
