@@ -82,8 +82,9 @@
                                 <img src="/assets/pages/img/works/img1.jpg" class="media-object" style="width:400px">
                             </div>
                         </div>
+                        <!-- END Image View-->
 
-                        <!-- BEGIN PORTFOLIO DESCRIPTION -->
+                        <!-- BEGIN Subjects -->
                         <div class="col-md-7">
                             <div class="row front-lists-v2 margin-bottom-15">
                                 <div class="col-md-6">
@@ -104,7 +105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END PORTFOLIO DESCRIPTION -->
+                        <!-- END Subjects -->
                     </div>
 
                 </div>
@@ -115,84 +116,7 @@
     </div>
 </div>
 
-<!-- BEGIN PRE-FOOTER -->
-<div class="pre-footer">
-    <div class="container">
-        <div class="row">
-            <!-- BEGIN BOTTOM ABOUT BLOCK -->
-            <div class="col-md-4 col-sm-6 pre-footer-col">
-                <h2>About us</h2>
-                <p>Loudoun Tutor is an open directory for connecting Tutors with Students</p>
-                <!-- Photo Stream to be published after registrations --------------
-                <div class="photo-stream">
-                  <h2>Photos Stream</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img5-small.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img1.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img4-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img6.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img3.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img2-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img2.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img5.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img5-small.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img1.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img4-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img6.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img3.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/people/img2-large.jpg"></a></li>
-                    <li><a href="javascript:;"><img alt="" src="/assets/pages/img/works/img2.jpg"></a></li>
-                  </ul>
-                </div>
-                -------------- Photo Stream to be published after registrations -->
-            </div>
-            <!-- END BOTTOM ABOUT BLOCK -->
-
-            <!-- BEGIN BOTTOM CONTACTS -->
-            <div class="col-md-4 col-sm-6 pre-footer-col">
-                <h2>Our Contacts</h2>
-                <address class="margin-bottom-40">
-                    43288, Railstop Terrace, Ashburn <br>
-                    Virginia US<br>
-                    Phone: 410 562 6792<br>
-                    Email: <a href="mailto:info@sophist.com">info@sophist.com</a><br>
-                </address>
-                <!-- END BOTTOM CONTACTS -->
-
-            </div>
-        </div>
-    </div>
-    <!-- END PRE-FOOTER -->
-
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- BEGIN COPYRIGHT -->
-                <div class="col-md-4 col-sm-4 padding-top-10">
-                    2017 © sophist.com ALL Rights Reserved. <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
-                </div>
-                <!-- END COPYRIGHT -->
-                <!-- BEGIN PAYMENTS -->
-                <div class="col-md-4 col-sm-4">
-                    <ul class="social-footer list-unstyled list-inline pull-right">
-                        <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-skype"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-github"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="javascript:;"><i class="fa fa-dropbox"></i></a></li>
-                    </ul>
-                </div>
-                <!-- END PAYMENTS -->
-            </div>
-        </div>
-    </div>
-    <!-- END FOOTER -->
-
+    <#include 'footer.ftl'>
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
     <!--[if lt IE 9]>
