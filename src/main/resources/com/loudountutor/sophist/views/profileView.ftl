@@ -80,14 +80,9 @@
 
                         <!-- BEGIN Subject -->
                         <div class="col-md-7">
-                            <div class="row margin-bottom-15 blablabla">
+                            <div class="row margin-bottom-15 subjectListProps">
                                 <div class="col-md-6">
                                     <ul class="list-unstyled" id = "list">
-
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="list-unstyled">
 
                                     </ul>
                                 </div>
