@@ -31,7 +31,7 @@ public class ProfileResource {
     }
 
     @GET
-    @Path("home")
+    @Path("")
     @Produces(MediaType.TEXT_HTML)
     public Response getProfile() throws URISyntaxException {
 

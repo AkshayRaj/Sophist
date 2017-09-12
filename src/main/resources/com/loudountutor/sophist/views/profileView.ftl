@@ -14,16 +14,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <meta content="Metronic Shop UI description" name="description">
-    <meta content="Metronic Shop UI keywords" name="keywords">
-    <meta content="keenthemes" name="author">
-
-    <meta property="og:site_name" content="-CUSTOMER VALUE-">
-    <meta property="og:title" content="-CUSTOMER VALUE-">
-    <meta property="og:description" content="-CUSTOMER VALUE-">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
-    <meta property="og:url" content="-CUSTOMER VALUE-">
+    <!-- Useful for showing description and other details for Search Engine searches-->
+    <meta content="Sophist is open directory for connecting with experts" name="description">
+    <meta content="tutors teachers tutoring teaching" name="keywords">
+    <meta content="sophist" name="author">
 
     <link rel="shortcut icon" href="favicon.ico">
 
@@ -58,7 +52,7 @@
 <!-- BEGIN HEADER -->
 <div class="header">
     <div class="container">
-        <a class="site-logo" href="index.html"><img src="/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>
+        <a class="site-logo" href="/"><img src="/assets/corporate/img/logos/logo-corp-red.png" alt="Sophist"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -84,28 +78,22 @@
                         </div>
                         <!-- END Image View-->
 
-                        <!-- BEGIN Subjects -->
+                        <!-- BEGIN Subject -->
                         <div class="col-md-7">
-                            <div class="row front-lists-v2 margin-bottom-15">
+                            <div class="row margin-bottom-15 blablabla">
                                 <div class="col-md-6">
-                                    <ul class="list-unstyled">
-                                        <li><i class="fa fa-html5"></i> HTML5/CSS3</li>
-                                        <li><i class="fa fa-bell"></i> Web Deisgn</li>
-                                        <li><i class="fa fa-globe"></i> Web Development</li>
-                                        <li><i class="fa fa-shopping-cart"></i> Shoping Cart</li>
+                                    <ul class="list-unstyled" id = "list">
+
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
-                                        <li><i class="fa fa-dropbox"></i> Free Storage</li>
-                                        <li><i class="fa fa-cloud"></i> Cloud Hosting</li>
-                                        <li><i class="fa fa-comments"></i> Free Support</li>
-                                        <li><i class="fa fa-star"></i> Awesome UI</li>
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- END Subjects -->
+                        <!-- END Subject -->
                     </div>
 
                 </div>
@@ -138,7 +126,20 @@
             Layout.init();
             Layout.initTwitter();
             Layout.initOWL();
+            loadSubjectList();
         });
+    </script>
+    <!-- Script for loading subject list-->
+    <script>
+        function loadSubjectList() {
+            $("#list").html("");
+            $.getJSON("/tutor/${student.id}/subjects", function(result){
+                console.log(result.subjects);
+                $.each(result.subjects, function(i, field){
+                    $("#list").append("<li>" + field + "</li>");
+                });
+            });
+        }
     </script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>

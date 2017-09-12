@@ -1,9 +1,7 @@
 package com.loudountutor.sophist.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import org.slf4j.Logger;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -24,6 +22,8 @@ public class Student {
 
     @NotNull
     private Date dateOfBirth;
+
+    private int grade;
 
     @NotNull
     @Size(min = 2, max = 255)

@@ -1,12 +1,12 @@
 package com.loudountutor.sophist.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.sql.Date;
+import java.util.List;
 
 @JsonDeserialize(builder = Tutor.Builder.class)
 public class Tutor {
@@ -24,12 +24,18 @@ public class Tutor {
     @NotNull
     private Date dateOfBirth;
 
+    List<Subject> subjects;
+
     @NotNull
     @Size(min = 2, max = 255)
     private String email;
 
     @Size(min = 10, max = 20)
     private String phone;
+
+    private int rating;
+
+    private int noOfReviews;
 
     private String password;
 

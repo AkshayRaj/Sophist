@@ -38,4 +38,14 @@ public class TutorResource {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
     }
+
+    @GET
+    @Path("/{id}/subjects")
+    public Response getSubjects(@PathParam("id") long id) {
+
+            String json = "{\n" +
+                    "  \"subjects\": [\"math\",\"english\",\"chess\",\"science\",\"chemistry\",\"physics\",\"programming\"]\n" +
+                    "}";
+            return Response.ok(json).build();
+    }
 }
